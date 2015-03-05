@@ -1,6 +1,9 @@
 # PATH var
 export PATH=$HOME/.node/bin:$HOME/.ruby/default/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
+# Homebrew path
+export PATH=${HOME}/homebrew/bin:${PATH}
+
 # Turn off setting so git won't ask for commit message on merge
 export GIT_MERGE_AUTOEDIT=no
 
