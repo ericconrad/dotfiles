@@ -66,7 +66,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "way nothing to commit, working directory clean" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
 }
 
 source `xcode-select --print-path`/usr/share/git-core/git-completion.bash
