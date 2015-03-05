@@ -3,6 +3,8 @@ dotfiles
 
 A place to keep config files so we can share and track them, with a script to symlink them for you. To get this up and running:
 
+(For those from Art 229, switch to the maclab branch.)
+
 1. Fork this repo (so you can make changes for yourself)
 1. Clone your fork into ~/dotfiles
 1. Add this repo as the upstream branch: `cd ~/dotfiles && git remote add upstream git@github.com:jasonrhodes/dotfiles.git`
@@ -22,7 +24,7 @@ Bash configuration file loaded on every terminal session. If you make a change h
 User-level configuration file for all things git. Anything you would normally add with `git config --global --add key.subkey value` can be added in the .gitconfig file as:
 
 ```
-[key] 
+[key]
 	subkey = value
 ```
 
