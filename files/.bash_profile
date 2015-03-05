@@ -29,6 +29,11 @@ if type brew > /dev/null 2>&1 && [ -f `brew --prefix`/etc/bash_completion ]; the
   . `brew --prefix`/etc/bash_completion
 fi
 
+# This is what brew says to add here, looks a lot like 27-30
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#   . $(brew --prefix)/etc/bash_completion
+# fi
+
 if [ -f /contrib/completion/git-completion.bash ]; then
   # Git OS X Installer: http://code.google.com/p/git-osx-installer/
   . /contrib/completion/git-completion.bash
