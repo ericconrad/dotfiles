@@ -11,7 +11,7 @@ A place to keep config files so we can share and track them, with a script to sy
 1. Delete unused master branch: `git branch -d master` then `git push origin :master` (don't forget the colon)
 1. Add this repo as the upstream branch: `git remote add upstream git@github.com:ericconrad/dotfiles.git`, if you get an error message about upstream already existing, run: `git remote set-url upstream git@github.com:ericconrad/dotfiles.git`
 1. Pull all latest changes from upstream: `git fetch upstream` then `git merge upstream/maclab`
-1. Make sure you have bash-completion installed by running: `brew list | grep bash-completion` if nothing is returned, run: `cd ~`, then `git clone https://github.com/mxcl/homebrew.git`, then `export PATH=${HOME}/homebrew/bin:${PATH}`, and finally `brew install bash-completion` (don't worry about what it tells you to put in your .bash_profile, it's already there)
+1. Make sure you have bash-completion installed by running: `brew list | grep bash-completion` if nothing is returned, run: `cd ~`, then `git clone https://github.com/mxcl/homebrew.git`, and finally `brew install bash-completion` (don't worry about what it tells you to put in your .bash_profile, it's already there)
 1. Make the symlink script executable: `chmod +x ~/dotfiles/symlink.sh`
 1. Run the symlink.sh script: `~/dotfiles/symlink.sh`
 1. Now open your dotfiles repository to edit the files with your information (specifically lines 16, 17, and 26 of .gitconfig): `cd ~/dotfiles` then `open -a Atom .` (if you're using another application replace "Atom" with the application name)
