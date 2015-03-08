@@ -7,7 +7,7 @@ A place to keep config files so we can share and track them, with a script to sy
 ####All users
 1. Fork this repo at github.com (so you can make changes for yourself)
 1. Go to "settings" in the right sidebar of your repo and change the default branch to "maclab"
-1. Open the Xcode application (found in your applications folder) and agree to the terms and conditions. This is a one-time per-machine step and you can immediately close out of Xcode afterwards.
+1. Open the Xcode application (found in your applications folder) and agree to the terms and conditions. (If you do not have Xcode already you will need to [download it](https://developer.apple.com/xcode/downloads/ "Download Xcode"). You will also need login and the [Command Line Tools](https://developer.apple.com/downloads/index.action "Developer Tools") for your version of OS X. This is a one-time per-machine step and you can immediately close out of Xcode afterwards.
 
 ####If using GitHub app
 1. Open the GitHub app and make sure you are logged into your account using GitHub > Preferences, select "Accounts" and then enter your GitHub username and password, then click "Sign In"
