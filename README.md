@@ -3,10 +3,19 @@ dotfiles
 
 A place to keep config files so we can share and track them, with a script to symlink them for you. To get this up and running:
 
+####In your favorite web browser (all users)
 1. Fork this repo at github.com (so you can make changes for yourself)
 1. Copy the ssh clone url from the right sidebar of your repo
 1. Go to "settings" in the right sidebar of your repo and change the default branch to "maclab"
-1. In terminal: Clone your fork into ~/dotfiles: `git clone [paste ssh clone url] dotfiles`, should look like: `git clone git@github.com:yourusername/yourreponame.git dotfiles`
+
+####If using GitHub app
+1. Open the GitHub app and make sure you are logged into your account using GitHub > Preferences, select "Accounts" and then enter your GitHub username and password, then click "Sign In"
+1. Back in your browser, click on the "Clone in Desktop" button. It will automatically take you to the GitHub app and ask where you would like the repository cloned to
+1. Choose the location and directory name for your local repository and click "Clone"
+ 
+####If using Terminal
+1. On your repository's page (URL should be github.com/username/repo-name) find the SSH clone URL in the right menu and click the "Copy to clipboard" button. If it says "HTTPS clone URL" above the input box, click on the blue "SSH" link below, this will change the clone URL to use SSH instead of HTTPS, and then click on the "Copy to clipboard" button
+1. Open Terminal and clone your fork into a dotfiles directory in your user (home) directory `git clone [paste ssh clone url] ~/dotfiles`, should look like: `git clone git@github.com:yourusername/yourreponame.git ~/dotfiles`
 1. Move into your dotfiles directory: `cd ~/dotfiles`
 1. Delete unused master branch: `git branch -d master` then `git push origin :master` (don't forget the colon)
 1. Add this repo as the upstream branch: `git remote add upstream git@github.com:ericconrad/dotfiles.git`, if you get an error message about upstream already existing, run: `git remote set-url upstream git@github.com:ericconrad/dotfiles.git`
