@@ -65,8 +65,9 @@ NO_COLOR="\[\e[0m\]"
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
+# Make sure the prompt after running 'git status' matches EXACTLY what is printed below, otherwise you'll have persistent red asterisk
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
 }
 
 source `xcode-select --print-path`/usr/share/git-core/git-completion.bash
