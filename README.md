@@ -14,11 +14,11 @@ A place to keep config files so we can share and track them, with a script to sy
 1. Back in your browser, click on the "Clone in Desktop" button. It will automatically take you to the GitHub app and ask where you would like the repository cloned to
 1. Make sure you clone your repository to your user (home) directory and name the repository "dotfiles"
 2. Click "Clone"
- 
+
 ####If using Terminal
 1. On your repository's page (URL should be github.com/username/repo-name) find the SSH clone URL in the right menu and click the "Copy to clipboard" button. If it says "HTTPS clone URL" above the input box, click on the blue "SSH" link below, this will change the clone URL to use SSH instead of HTTPS, and then click on the "Copy to clipboard" button
 1. Open Terminal and clone your fork into a dotfiles directory in your user (home) directory `git clone [paste ssh clone url] ~/dotfiles`, should look like: `git clone git@github.com:yourusername/yourreponame.git ~/dotfiles`
- 
+
 ####All users
 1. Open Terminal
 1. Move into your dotfiles directory: `cd ~/dotfiles`
@@ -47,16 +47,17 @@ A place to keep config files so we can share and track them, with a script to sy
 - Shows full directory paths so it is easier to understand where you are
 - Shows GitHub branch names in your terminal input
 - Gives a visual cue when you have changed and un-committed files in your repository
-- Provides shortened aliases for frequently used commands 
+- Provides shortened aliases for frequently used commands
     - `git status` becomes `git st`
     - `git add --all` becomes `git aa`
     - `git commit -m "message"` becomes `git cm "message"`
+    - `open -a Atom` becomes `atom`
     - `ls -la` becomes `la`
     - `cd ..` becomes `..`
     - `showhiddenfiles` will show all hidden files in Finder
     - `hidehiddenfiles` will hide all hidden files in Finder
     - `source ~/.bash_profile` becomes `bp` (helpful for when you've updated your bash profile with other useful things
-    
+
 ## Current dotfiles included
 
 ### .bash_profile
