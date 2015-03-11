@@ -14,6 +14,7 @@ export GEM_HOME=$HOME/.ruby/default
 alias ..="cd .."
 alias bp="source ~/.bash_profile"
 alias atom="open -a Atom"
+alias home="cd ~"
 alias gs="git st"
 alias la="ls -la"
 
